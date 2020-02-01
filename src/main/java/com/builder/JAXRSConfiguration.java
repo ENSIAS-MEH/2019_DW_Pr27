@@ -1,4 +1,4 @@
-package com.airhacks;
+package com.builder;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -9,7 +9,7 @@ import javax.ws.rs.core.Application;
  *
  * @author airhacks.com
  */
-@ApplicationPath("resources")
+@ApplicationPath("/*")
 public class JAXRSConfiguration extends Application {
 
 }
