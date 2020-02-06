@@ -31,19 +31,20 @@ public class Import {
         while ((lineText = lineReader.readLine()) != null) {
 
             String[] data = lineText.split(",");
-            String name = data[0];
-            String synonym = data[1];
-            String embranchement = data[2];
-            String classe = data[3];
-            String subclasse = data[4];
-            String famille = data[5];
-            String genre = data[6];
-            String description = data[7];
-            String distribution = data[8];
-            String groupeTrophique = data[9];
-            String groupeEcologique = data[10];
-            String categorie = data[11];
-            temp = new Creature(name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie);
+            String id = data[0];
+            String name = data[1];
+            String synonym = data[2];
+            String embranchement = data[3];
+            String classe = data[4];
+            String subclasse = data[5];
+            String famille = data[6];
+            String genre = data[7];
+            String description = data[8];
+            String distribution = data[9];
+            String groupeTrophique = data[10];
+            String groupeEcologique = data[11];
+            String categorie = data[12];
+            temp = new Creature(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie);
             creatures.add(temp);
         }
         lineReader.close();

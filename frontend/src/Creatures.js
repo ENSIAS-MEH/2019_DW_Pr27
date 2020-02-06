@@ -13,7 +13,7 @@ export default class Creatures extends React.Component {
     render() {
         return (
             <section>
-                {this.state.creatures.map(creature => <div> {creature.name}<br/> {creature.synonym}<br/> {creature.embranchement}<br/> {creature.classe}<br/> {creature.subclasse}<br/> {creature.famille}<br/> {creature.genre}<br/> {creature.description}<br/> {creature.distribution}<br/> {creature.groupetrophique}<br/> {creature.groupeecologique}<br/> {creature.categorie}</div>)}
+                {this.state.creatures.map(creature => <div>{creature.id}<br/> {creature.name}<br/> {creature.synonym}<br/> {creature.embranchement}<br/> {creature.classe}<br/> {creature.subclasse}<br/> {creature.famille}<br/> {creature.genre}<br/> {creature.description}<br/> {creature.distribution}<br/> {creature.groupetrophique}<br/> {creature.groupeecologique}<br/> {creature.categorie}</div>)}
             </section>
         )
     }

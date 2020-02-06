@@ -11,6 +11,7 @@ package com.beans;
  */
 public class Creature {
     
+    private String id;
     private String name;
     private String synonym;
     private String embranchement;
@@ -26,7 +27,8 @@ public class Creature {
     
     //name,synonym,embranchement,classe,subclasse,famille,genre,description,distribution,groupetrophique,groupeecologique,categorie
 
-    public Creature(String name, String synonym, String embranchement, String classe, String subclasse, String famille, String genre, String description, String distribution, String groupeTrophique, String groupeEcologique, String categorie) {
+    public Creature(String id, String name, String synonym, String embranchement, String classe, String subclasse, String famille, String genre, String description, String distribution, String groupeTrophique, String groupeEcologique, String categorie) {
+        this.id = id;
         this.name = name;
         this.synonym = synonym;
         this.embranchement = embranchement;
@@ -39,6 +41,14 @@ public class Creature {
         this.groupetrophique = groupeTrophique;
         this.groupeecologique = groupeEcologique;
         this.categorie = categorie;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

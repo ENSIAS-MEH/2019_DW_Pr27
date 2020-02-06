@@ -39,13 +39,14 @@ public class DaoFactory {
         return DriverManager.getConnection(url, username, password);
     }
 
-    // Récupération du Dao
+    // Recuperation du Dao
     public CreatureDao getCreatureDao() {
         return new CreatureDaoImpl(this);
     }
 }
 /*
 CREATE TABLE creatures (
+    id varchar(255),
     name varchar(255),
     synonym varchar(255),
     embranchement varchar(255),
