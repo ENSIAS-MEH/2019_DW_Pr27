@@ -24,10 +24,14 @@ public class Creature {
     private String groupetrophique;
     private String groupeecologique;
     private String categorie;
+    private String x1;
+    private String y1;
+    private String x2;
+    private String y2;
     
     //name,synonym,embranchement,classe,subclasse,famille,genre,description,distribution,groupetrophique,groupeecologique,categorie
 
-    public Creature(String id, String name, String synonym, String embranchement, String classe, String subclasse, String famille, String genre, String description, String distribution, String groupeTrophique, String groupeEcologique, String categorie) {
+    public Creature(String id, String name, String synonym, String embranchement, String classe, String subclasse, String famille, String genre, String description, String distribution, String groupeTrophique, String groupeEcologique, String categorie, String x1, String y1, String x2, String y2) {
         this.id = id;
         this.name = name;
         this.synonym = synonym;
@@ -41,6 +45,42 @@ public class Creature {
         this.groupetrophique = groupeTrophique;
         this.groupeecologique = groupeEcologique;
         this.categorie = categorie;
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+    }
+
+    public String getX1() {
+        return x1;
+    }
+
+    public void setX1(String x1) {
+        this.x1 = x1;
+    }
+
+    public String getY1() {
+        return y1;
+    }
+
+    public void setY1(String y1) {
+        this.y1 = y1;
+    }
+
+    public String getX2() {
+        return x2;
+    }
+
+    public void setX2(String x2) {
+        this.x2 = x2;
+    }
+
+    public String getY2() {
+        return y2;
+    }
+
+    public void setY2(String y2) {
+        this.y2 = y2;
     }
 
     public String getId() {

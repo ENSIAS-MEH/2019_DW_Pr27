@@ -32,7 +32,7 @@ public class CreatureDaoImpl implements CreatureDao {
 
         try {
             connexion = daoFactory.getConnection();
-            preparedStatement = connexion.prepareStatement("INSERT INTO creatures(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+            preparedStatement = connexion.prepareStatement("INSERT INTO creatures(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie, x1, y1, x2, y2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
             preparedStatement.setString(1, creature.getId());
             preparedStatement.setString(2, creature.getName());
             preparedStatement.setString(3, creature.getSynonym());
@@ -46,6 +46,10 @@ public class CreatureDaoImpl implements CreatureDao {
             preparedStatement.setString(11, creature.getGroupetrophique());
             preparedStatement.setString(12, creature.getGroupeecologique());
             preparedStatement.setString(13, creature.getCategorie());
+            preparedStatement.setString(14, creature.getX1());
+            preparedStatement.setString(15, creature.getY1());
+            preparedStatement.setString(16, creature.getX2());
+            preparedStatement.setString(17, creature.getY2());
             
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -76,7 +80,7 @@ public class CreatureDaoImpl implements CreatureDao {
         try {
             connexion = daoFactory.getConnection();
             statement = connexion.createStatement();
-            resultat = statement.executeQuery("SELECT id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie FROM creatures;");
+            resultat = statement.executeQuery("SELECT id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie, x1, y1, x2, y2 FROM creatures;");
 
             while (resultat.next()) {
                 String id = resultat.getString("id");
@@ -92,8 +96,12 @@ public class CreatureDaoImpl implements CreatureDao {
                 String groupeTrophique = resultat.getString("groupeTrophique");
                 String groupeEcologique = resultat.getString("groupeEcologique");
                 String categorie = resultat.getString("categorie");
+                String x1 = resultat.getString("x1");
+                String y1 = resultat.getString("y1");
+                String x2 = resultat.getString("x2");
+                String y2 = resultat.getString("y2");
 
-                Creature creature = new Creature(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie);
+                Creature creature = new Creature(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie, x1, y1, x2, y2);
                 creatures.add(creature);
             }
         } catch (SQLException e) {

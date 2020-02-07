@@ -1,0 +1,210 @@
+body{
+	max-width: 100vw;
+	margin: 0;
+	overflow-x: hidden;
+}
+.ba3oucha{
+	margin-top: 0;
+	height: 100%;
+
+	background-image: url("./bg.jpg");
+}
+.animated {
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top:95px;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+ }
+ 
+ 
+ @-webkit-keyframes fadeInLeft {
+	0% {
+	   opacity: 0;
+	   -webkit-transform: translateX(0);
+	}
+	100% {
+	   opacity: 1;
+	   -webkit-transform: translateX(0);
+	}
+ }
+ 
+ @keyframes fadeInLeft {
+	0% {
+	   opacity: 0;
+	   transform: translateX(0);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(0);
+	}
+ }
+ 
+ .fadeInLeft {
+ -webkit-animation-name: fadeInLeft;
+ animation-name: fadeInLeft;
+ } 
+   
+ @-webkit-keyframes fadeInRight {
+	0% {
+	   opacity: 0;
+	   transform: translateX(694px);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(694px);
+	}
+ }
+ 
+ @keyframes fadeInRight {
+	0% {
+	   opacity: 0;
+	   transform: translateX(694px);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(694px);
+	}
+ }
+ 
+ .fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+ }
+ 
+ @-webkit-keyframes fadeInLeft2 {
+	0% {
+	   opacity: 0;
+	   -webkit-transform: translateX(0);
+	}
+	100% {
+	   opacity: 1;
+	   -webkit-transform: translateX(0);
+	}
+ }
+ 
+ @keyframes fadeInLeft2 {
+	0% {
+	   opacity: 0;
+	   transform: translateX(0);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(0);
+	}
+ }
+ 
+ .fadeInLeft2 {
+ -webkit-animation-name: fadeInLeft2;
+ animation-name: fadeInLeft2;
+ } 
+   
+ @-webkit-keyframes fadeInRight2 {
+	0% {
+	   opacity: 0;
+	   transform: translateX(456px);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(456px);
+	}
+ }
+ 
+ @keyframes fadeInRight2 {
+	0% {
+	   opacity: 0;
+	   transform: translateX(456px);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateX(456px);
+	}
+ }
+ 
+ .fadeInRight2 {
+	-webkit-animation-name: fadeInRight2;
+	animation-name: fadeInRight2;
+ }
+ .row{
+	 text-align: center;
+ }
+ .row h3{
+	font-size: 2em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(255, 255, 255);
+	margin: 0;
+
+
+ }
+ .row p{
+	font-size: 1em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(255, 255, 255);
+ }
+.separator2 {
+		height: 1px;
+		width: 127px;
+		margin: 20px auto;
+		background: #656b6b;
+	}
+.bixbox{
+	background-color: rgba(142, 224, 230, 0.883);
+	width: 90%;
+	height: 300px;
+	align-items: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin: 0;
+	
+}
+.corona, .ebola{
+	position: absolute;
+	display: inline;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 508px;
+
+}
+.corona {
+	float: right;
+}
+
+.ebola {
+	float: left;
+}
+.fuego h1{
+	color: aliceblue;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fuego p{
+	color: aliceblue;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mbutton{
+	block-size: 3em;
+	background-color: rgb(132, 236, 236);
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+.mbutton:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.fuego{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.last{
+	padding-bottom: 95px;
+}
+
+ 

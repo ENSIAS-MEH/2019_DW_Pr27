@@ -58,6 +58,10 @@ CREATE TABLE creatures (
     distribution varchar(255),
     groupeTrophique varchar(255),
     groupeEcologique varchar(255),
-    categorie varchar(255)
+    categorie varchar(255),
+    x1 varchar(255),
+    y1 varchar(255),
+    x2 varchar(255),
+    y2 varchar(255)
 );
 */

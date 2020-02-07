@@ -1,4 +1,4 @@
-export default class Client {
+export default class Client{
 
     creatures() {
         let result = new Promise((resolve, reject) => {

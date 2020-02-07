@@ -44,7 +44,11 @@ public class Import {
             String groupeTrophique = data[10];
             String groupeEcologique = data[11];
             String categorie = data[12];
-            temp = new Creature(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie);
+            String x1 = data[13];
+            String y1 = data[14];
+            String x2 = data[15];
+            String y2 = data[16];
+            temp = new Creature(id, name, synonym, embranchement, classe, subclasse, famille, genre, description, distribution, groupeTrophique, groupeEcologique, categorie, x1, y1, x2, y2);
             creatures.add(temp);
         }
         lineReader.close();
