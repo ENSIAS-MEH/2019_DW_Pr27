@@ -25,13 +25,13 @@ function Navbar() {
         <ul className="navbar-nav m-auto">
         <li className="nav-item active">
             <Link className="nav-a text-white text-uppercase ml-5" to="/firstpage">
-              Homepage
+              ACCEUIL
               <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item active">
             <Link className="nav-a text-white text-uppercase ml-5" to="/species">
-              Scpecies&nbsp;
+              ESPECES&nbsp;
               <span className="sr-only">(current)</span>
             </Link>
           </li>
@@ -40,7 +40,7 @@ function Navbar() {
               className="nav-a text-white text-uppercase ml-5"
               to="/contacts"
             >
-              About Us
+              À PROPOS
             </a>
           </li>
         </ul>
@@ -55,7 +55,7 @@ function Navbar() {
             className="btn btn-outline-light  my-2 my-sm-0"
             type="submit"
           >
-            Search
+            RECHERCHE
           </button>
         </form>
       </div>
