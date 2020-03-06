@@ -20,17 +20,17 @@ class species extends Component {
           <div className="bixbox">
             <div id="animated-example" className="animated fadeInLeft corona">
               <h1>Mollusque</h1>
-              <p>Ce catalalogue ne traite pas tous les taxons échantillonnés dans la baie d'Oued Laou. Il concernes le animaux entiers qui étaient correctement prélevés à l'aide de la draque conique utilisée.</p>
+              <p>Les mollusques (Mollusca) sont un embranchement d'animaux Lophotrochozoaires. Ce sont des animaux non segmentés, à symétrie bilatérale quelquefois altérée.</p>
               <Link
                 className="btn btn-outline-secondary text-uppercase"
                 to="/home"
               >
-                More Info >>
+                Découvrir >>
               </Link>
 
             </div>
             <div id="animated-example" className="animated fadeInRight ebola ">
-              <img src={polychete} alt="Avatar" />
+              <img src={mollusque} alt="Avatar" />
 
 
             </div>
@@ -38,28 +38,28 @@ class species extends Component {
           <div className="bixbox">
             <div id="animated-example" className="animated fadeInRight2 corona">
               <h1>Echinoderme</h1>
-              <p>Ce catalalogue ne traite pas tous les taxons échantillonnés dans la baie d'Oued Laou. Il concernes le animaux entiers qui étaient correctement prélevés à l'aide de la draque conique utilisée.</p>
+              <p>Les échinodermes (Echinodermata) forment un embranchement d'animaux marins benthiques présents à toutes les profondeurs océaniques, et dont les premières traces fossiles remontent au Cambrien</p>
               <Link
                 className="btn btn-outline-secondary text-uppercase"
                 to="/"
               >
-                More Info >>
+                Découvrir >>
               </Link>
             </div>
             <div id="animated-example" className="animated fadeInLeft2 ebola ">
-              <img src={polychete} alt="Avatar" />
+              <img src={echinoderme} alt="Avatar" />
 
             </div>
           </div>
           <div className="bixbox">
             <div id="animated-example" className="animated fadeInLeft corona">
               <h1>Polychete</h1>
-              <p>Ce catalalogue ne traite pas tous les taxons échantillonnés dans la baie d'Oued Laou. Il concernes le animaux entiers qui étaient correctement prélevés à l'aide de la draque conique utilisée.</p>
+              <p>Les polychètes (Polychaeta) sont une classe de l'embranchement des Annélides. Ils constituent le groupe de vers annélides comportant le plus grand nombre d'espèces, soit plus de 13 000</p>
               <Link
                 className="btn btn-outline-secondary text-uppercase"
                 to="/"
               >
-                More Info >>
+                Découvrir >>
               </Link>
             </div>
             <div id="animated-example" className="animated fadeInRight ebola ">
@@ -75,27 +75,27 @@ class species extends Component {
                 className="btn btn-outline-secondary text-uppercase"
                 to="/"
               >
-                More Info >>
+                Découvrir >>
               </Link>
             </div>
             <div id="animated-example" className="animated fadeInLeft2 ebola ">
-              <img src={polychete} alt="Avatar" />
+              <img src={corde} alt="Avatar" />
 
             </div>
           </div>
           <div className="bixbox last">
             <div id="animated-example" className="animated fadeInLeft corona">
               <h1>Crustace</h1>
-              <p>Ce catalalogue ne traite pas tous les taxons échantillonnés dans la baie d'Oued Laou. Il concernes le animaux entiers qui étaient correctement prélevés à l'aide de la draque conique utilisée.</p>
+              <p>Les Crustacés (Crustacea) sont un sous-embranchement des Arthropodes. Ce sont des animaux dont le corps est revêtu d’un exosquelette chitinoprotéique appelé exocuticule et souvent imprégné de carbonate de calcium</p>
               <Link
                 className="btn btn-outline-secondary text-uppercase"
                 to="/"
               >
-                More Info >>
+                Découvrir >>
               </Link>
             </div>
             <div id="animated-example" className="animated fadeInRight ebola ">
-              <img src={polychete} alt="Avatar" />
+              <img src={crustace} alt="Avatar" />
 
             </div>
           </div>
