@@ -165,7 +165,6 @@ body{
 	padding-left: 30px;
 	padding-right: 30px;
 	width: 508px;
-
 }
 .corona {
 	float: right;
@@ -184,7 +183,7 @@ body{
 }
 .mbutton{
 	block-size: 3em;
-	background-color: rgb(132, 236, 236);
+	background-color: rgb(107, 171, 255);
 	border: none;
 	color: white;
 	padding: 16px 32px;
@@ -206,5 +205,15 @@ body{
 .last{
 	padding-bottom: 95px;
 }
+
+img {
+	width:250px;
+	height:180px;
+	object-fit:contain;
+}
+
+
+
+
 
  
