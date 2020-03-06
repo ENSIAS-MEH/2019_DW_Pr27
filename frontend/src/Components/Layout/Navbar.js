@@ -3,7 +3,7 @@ import logo from './logo1.png'
 import {Link} from 'react-router-dom'
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light  bg-info">
+    <nav className="navbar navbar-expand-lg navbar-light blue lighten-3">
       <a className="navbar-brand ml-5" href="#">
         <img src={logo} alt="logo" style={{ width: '300px' }} />
       </a>
